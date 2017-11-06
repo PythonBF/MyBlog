@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Category, Tag
+from .models import Post, Category, Tag, New, NewCategory
 import sys  
 reload(sys)  
 sys.setdefaultencoding('utf-8') 
@@ -10,3 +10,5 @@ class PostAdmin(admin.ModelAdmin):
 admin.site.register(Post)
 admin.site.register(Category)
 admin.site.register(Tag)
+admin.site.register(New)
+admin.site.register(NewCategory)
